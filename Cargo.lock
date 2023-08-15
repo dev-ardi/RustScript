@@ -3,6 +3,14 @@
 version = 3
 
 [[package]]
+name = "RustScript"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "tokio",
+]
+
+[[package]]
 name = "addr2line"
 version = "0.20.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -100,14 +108,6 @@ name = "rustc-demangle"
 version = "0.1.23"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d626bb9dae77e28219937af045c257c28bfd3f69333c512553507f5f9798cb76"
-
-[[package]]
-name = "sol"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "tokio",
-]
 
 [[package]]
 name = "tokio"
