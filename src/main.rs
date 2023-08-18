@@ -1,4 +1,4 @@
-use anyhow::anyhow;
+
 use lexer::lex;
 mod lexer;
 use std::{env, io};
@@ -11,7 +11,7 @@ fn main() -> anyhow::Result<()> {
         }
         Some(source_file) => {
             let source = std::fs::read_to_string(source_file)?;
-            let lexed = lex(source.as_str());
+            let _lexed = lex(source.as_str());
 
             Ok(())
         }
@@ -34,6 +34,6 @@ fn main() -> anyhow::Result<()> {
 }
 
 fn run(line: &str) -> anyhow::Result<()> {
-    let lexed = lex(line);
+    let _lexed = lex(line);
     Ok(())
 }
