@@ -2,7 +2,7 @@
 
 RustScript is a scripting language written specifically designed for daily operations.
 
-- Dynamically typed (for now)
+- Dynamically typed
 - Rust syntax
 - Garbage collected
 
